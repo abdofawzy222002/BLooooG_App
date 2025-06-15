@@ -44,7 +44,7 @@ export default function Signup() {
       const response = await axios.post("http://localhost:3000/auth/register", userData);
       console.log("Success", response.data);
 
-      setSuccessMessage("تم تسجيل حسابك بنجاح. برجاء التوجه إلى صفحة تسجيل الدخول.");
+      setSuccessMessage("Data saved successfully. Redirecting to the login page.");
       reset();
     } catch (error) {
       console.error("Error", error.response?.data || error.message);
