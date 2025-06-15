@@ -1,4 +1,5 @@
 {
+  "homepage": "https://abdofawzy222002.github.io/BLooooG_APP/",
   "name": "bloooog",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,9 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "start": "json-server db.json -m ./node_modules/json-server-auth"
+    "start": "json-server db.json -m ./node_modules/json-server-auth",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
