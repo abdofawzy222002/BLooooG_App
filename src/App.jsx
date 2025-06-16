@@ -49,7 +49,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/BLooooG_App">
       <Navbar loggedIn={loggedIn} onLogout={handleLogout} />
 
       {isFormOpen && (
